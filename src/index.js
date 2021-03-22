@@ -4,9 +4,11 @@ import './index.css';
 import AutoCompleter from './components/AutoCompleter.jsx';
 import reportWebVitals from './reportWebVitals';
 
+function myOnChangeFunction() { console.log("something changed"); }
+
 ReactDOM.render(
   <React.StrictMode>
-    <AutoCompleter />
+    <AutoCompleter onChange={myOnChangeFunction} value='init value' defaultValue='default value' options={['option1', 'option2']}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
