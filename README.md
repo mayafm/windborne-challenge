@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+After running npm install, use the npm start command to test. Component code is in /components/AutoCompleter.jsx and you can modify the 'options' prop (currently a list of month abbreviations) for testing in index.js. 
+
 ## Available Scripts
 
 In the project directory, you can run:

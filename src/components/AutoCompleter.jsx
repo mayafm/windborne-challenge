@@ -21,12 +21,10 @@ class AutoCompleter extends React.Component {
         else {
             this.setState({value: ''});
         }
-        console.log(this.state.value);
     }
     
     handleClick(event) {
         this.setState({value: event.target.textContent, inputValue: event.target.textContent});
-        console.log(this.state.value);
     }
     
     filter(option) {
