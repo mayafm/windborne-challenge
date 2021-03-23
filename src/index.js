@@ -4,11 +4,14 @@ import './index.css';
 import AutoCompleter from './components/AutoCompleter.jsx';
 import reportWebVitals from './reportWebVitals';
 
-function myOnChangeFunction() { console.log("something changed"); }
+var defaultValue = 'type to search options';
+
+var options = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+//modify options variable to be any list of strings for testing 
 
 ReactDOM.render(
   <React.StrictMode>
-    <AutoCompleter onChange={myOnChangeFunction} value='init value' defaultValue='default value' options={['option1', 'option2']}/>
+    <AutoCompleter defaultValue={defaultValue} options={options}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
